@@ -3,62 +3,93 @@
 
 <head>
 	 <script src="https://use.fontawesome.com/6cf3c4b1ed.js"></script>
+
 	 <meta charset="utf-8">
+
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	 <!-- This wil scale the fontsize so high res mobile users won´t have to squint -->
+
 	 <link href="style.css" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 
+<script>
+	function RienkRadio()
+{
+	var sLoc = document.getElementById('select').value;
+		document.location = sLoc;
+}
+</script>
 
-<title>Rienk' s Favoriete Radiostations</title>
+
+<title>My Favourite Radio Stations</title>
 </head>
 
+<body>
+<header>
+<h1> My Favourite Radio Stations</h1>
+<p> Don't ask me why. Just listen!</p>
+</header>
 
-
- <body>
-<h1> Mijn favoriete radiostations</h1>
-<p> Don't ask me why.</p>
-	 <div class ="fip">
-		 <h1>FIP</h1>
-		 <a href="http://www.fipradio.fr/player" target="_blank"> <img src="img/fip.png" /></a>
-		 <h3>Frans radiostation met focus op wereldmuziekmix.</h3>
-	 </div>
-
-	 <div class ="radio1">
-		 <h1>NPO1</h1>
-		 <a href="http://radioplayer.npo.nl/radio1/" target="_blank"> <img src="img/npo1.jpeg" /></a>
-		 <h3>Nederlandse nieuwszender met lichte muzikale omlijsting.</h3>
+<!-- Div section with links start here -->
+<div class ="fip">
+	<h4>FIP</h4>
+		 <a href="http://www.fipradio.fr/player" target="_blank">
+			 <img src="img/fip.png" /></a>
+		 		<p>French radio station focused on worldmusic.</p>
 </div>
 
-	<div class="radio2">
-		<h1>NPO2</h1>
-		<a href="http://radioplayer.npo.nl/radio2/" target="_blank"> <img src="img/npo2.jpeg" /></a>
-				<h3>Nederlands Easy Listening station.</h3>
-	</div>
+<div class ="fip">
+	<h4>NPO1</h4>
+		 <a href="http://radioplayer.npo.nl/radio1/" target="_blank">
+			 <img src="img/npo1.jpg" /></a>
+			 	<p>Dutch news station with a light musical touch.</p>
+</div>
 
-	<div class="fipG">
-		<h1>FIP GROOVE</h1>
-		<a href="http://www.fipradio.fr/player/fip-autour-du-groove
-" target="_blank"> <img src="img/fipG.jpeg" /></a>
-		 <h3>Kind van FIP --Good Groove</h3>
-	</div>
+<div class="fip">
+	<h4>NPO2</h4>
+		<a href="http://radioplayer.npo.nl/radio2/" target="_blank">
+			<img src="img/npo2.jpg" /></a>
+				<p>Dutch Easy Listening radio station.</p>
+</div>
 
+<div class="fip">
+	<h4>FIP GROOVE</h4>
+		<a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">
+			<img src="img/fipG.jpg" /></a>
+				<p>FIP -- Groovy Music.</p>
+</div>
 
-	<div class="fipJ"><h1>FIP JAZZ</h1>
-		<a href="http://www.fipradio.fr/player/fip-autour-du-jazz
-" target="_blank"> <img src="img/fipJ.png" /></a>
-<h3>Kind van FIP -- just Jazz</h3>
+<div class="fip">
+	<h4>FIP JAZZ</h4>
+		<a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">
+			<img src="img/fipJ.png" /></a>
+				<p>FIP -- Just Jazz.</p>
+</div>
 
-	</div>
+<div class="fip">
+	<h4>KLARA</h4>
+		<a href="http://radioplus.be/#/klara-continuo/playlist" target="_blank">
+			<img src="img/klara.jpg" /></a>
+				<p>Classical music station from Belgium. </p>
+</div>
 
-	<div class="classic"><h1>KLARA</h1>
-		<a href="https://klara.be/" target="_blank">
-			<img src="img/klara.png" /></a>
-<h3>Classical music station from Belgium </h3>
-	</div>
+<div class="fip2"><br><br><br><br>
+	<h3><i class="fa fa-copyright" aria-hidden="true"></i>Rienk Bezema 2017</font></h3>
+</div>
 
-	<footer><font size="1"><i class="fa fa-copyright" aria-hidden="true"></i> Rienk Bezema 2017 </font></footer>
+<div class="fip2"><br><br><br><br>
+	<h3>Choose a Radio Station</h3>
+		<select id="select" onchange="RienkRadio();">
+				<option>Choose a Radio Station</option>
+				<option value="http://www.fipradio.fr/player">FIP</a></option>
+				<option value="http://radioplayer.npo.nl/radio1/">NPO1</option>
+				<option value="http://radioplayer.npo.nl/radio2/">NPO2</option>
+				<option value="http://www.fipradio.fr/player/fip-autour-du-groove">FIP GROOVE</a></option>
+				<option value="http://www.fipradio.fr/player/fip-autour-du-jazz">FIP JAZZ</option>
+				<option value="http://radioplus.be/#/klara-continuo/playlist">KLARA</option>
+		</select>
+</div>
+<!-- Div section with links ends here -->
 
- </body>
-
+</body>
 </html>
